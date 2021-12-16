@@ -34,17 +34,38 @@ There are two sub-folders:
 
 Our last update was on the 26/04/2021. The previously downloaded version is kept for reference in the previous_version sub-folders.
 
-## Citation
+## License
 
-Xie, P., and P.A. Arkin, 1997:
+Unknown.
+
+## Data citation
+
+Unknown.
+
+## References
+
+Xie P and Arkin PA (1997):
 Global precipitation: A 17-year monthly analysis based on gauge observations, satellite estimates, and numerical model outputs.
-Bull. Amer. Meteor. Soc., 78, 2539 - 2558.
+*Bulletin of the American Meteorological Society*, 78, 2539-2558.
+[https://doi.org/10.1175/1520-0477(1997)078<2539:GPAYMA>2.0.CO;2](https://doi.org/10.1175/1520-0477(1997)078<2539:GPAYMA>2.0.CO;2)
 
-Message from data authors:
+Huffman GJ, Adler RF, Arkin P, Chang A, Ferraro R, Gruber A, Janowiak J, McNab A, Rudolf B, and Schneider U (1997).
+The Global Precipitation Climatology Project (GPCP) combined data set.
+*Bulletin of the American Meteorological Society*, 78, 5-20.
+[https://doi.org/10.1175/1520-0477(1997)078<0005:TGPCPG>2.0.CO;2](https://doi.org/10.1175/1520-0477(1997)078<0005:TGPCPG>2.0.CO;2)
+
+## Acknowledgement
+
 If you acquire CMAP Precipitation data products from PSL,
 we ask that you acknowledge us in your use of the data.
-This may be done by including text such as CMAP Precipitation data provided by the NOAA/OAR/ESRL PSL, Boulder, Colorado, USA,
-from their Web site at / in any documents or publications using these data.
+This may be done by including text such as the following 
+in any documents or publications using these data:
+
+"CMAP Precipitation data provided by the NOAA/OAR/ESRL PSL, Boulder, Colorado, USA,
+from their Web site at <location>" 
+  
+## Author note
+
 We would also appreciate receiving a copy of the relevant publications.
 This will help PSL to justify keeping the CMAP Precipitation data set freely available online in the future.
 Thank you!
