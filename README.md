@@ -74,3 +74,7 @@ from their Web site at <location>"
 We would also appreciate receiving a copy of the relevant publications.
 This will help PSL to justify keeping the CMAP Precipitation data set freely available online in the future.
 Thank you!
+  
+## Assistance
+
+For assistance with CMAP data on NCI, open a new issue at https://github.com/nci-ref-clim-data/CMAP/issues
