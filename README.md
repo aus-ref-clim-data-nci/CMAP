@@ -9,8 +9,12 @@ For more information you can check the original data soruce on the
 [NOAA Physical Sceince Laboratory (PSL) website](https://psl.noaa.gov/data/gridded/data.cmap.html)
 and the [UCAR climate data guide](https://climatedataguide.ucar.edu/climate-data/cmap-cpc-merged-analysis-precipitation)
 for a review of the dataset.
+
+## Data download
+
 The [original data](https://www.cpc.ncep.noaa.gov/products/global_precip/html/wpage.cmap.html)
-is created by NOAA Climate Prediction Center (CPC) and it is in ascii format; we download a netcdf version from PSL.
+is created by NOAA Climate Prediction Center (CPC) and it is in ascii format;
+we download a netcdf version from [PSL](https://psl.noaa.gov/data/gridded/data.cmap.html).
 For this reason the PSL data is updated irregularly, following updates at CPC.
 
 ## Data location
@@ -32,7 +36,8 @@ There are two sub-folders:
 - `precip.mon.mean.nc`: standard monthly mean from 1979/01 to 2021/03
 - `precip.pentad.mean.nc`: standard pentad mean from 1979/01 to 2016/12/27
 
-Our last update was on the 26/04/2021. The previously downloaded version is kept for reference in the previous_version sub-folders.
+Our last update was on the 26/04/2021.
+The previously downloaded version is kept for reference in the previous_version sub-folders.
 
 ## License
 
