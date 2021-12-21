@@ -29,7 +29,7 @@
 # record of updated files is kept in /g/data/ia39/cmap/replica/data/updates.txt
 #
 # Last change:
-# 2021-12-21
+# 2021-12-22
 
 fname=$1
 # subset can be std or enh
@@ -39,9 +39,11 @@ data_dir=/g/data/ia39/cmap/replica/data
 # download the file the calculate checksum for both new and old file
 # if they differ update collection and log file
 # old file is then temporarily moved to the previous_version folder
+# testing  -N flag, so file shouldn't be downloaded unless is newer
+# so if it works we'll need to adjust other actions
 wget -N https://downloads.psl.noaa.gov/Datasets/cmap/${subset}/${fname}
-new_md5=$(md5sum ${fname})
-old_md5=$(md5sum ${data_dir}/${subset}/${fname})
+new_md5=$(md5sum ${fname} | awk -F' ' '{print $1}')
+old_md5=$(md5sum ${data_dir}/${subset}/${fname} | awk -F' ' '{print $1}')
 if [ "new_md5" = "old_md5" ]; then
     rm $fname
 else
