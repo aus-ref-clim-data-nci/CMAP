@@ -22,11 +22,11 @@
 # long term monthly (ltm) goes from 1981 to 2010
 # pentad: currently to 2016 so next 5-yrs will be possibly available soon
 #
-# The dataset is stored in /g/data/ua8/Precipitation/CMAP/<subset>/<files>
+# The dataset is stored in /g/data/ia39/cmap/replica/data/<subset>/<files>
 # where <subset> can be enh (enhanced) or std (standard)
 #
 # To run the script ./cmap_download.sh <filename> <subset>
-# record of updated files is kept in /g/data/ua8/Precipiation/CMAP/updates.txt
+# record of updated files is kept in /g/data/ia39/cmap/replica/data/updates.txt
 #
 # Last change:
 # 2021-12-21
@@ -35,11 +35,11 @@ fname=$1
 # subset can be std or enh
 subset=$2
 today=$(date "+%Y-%m-%d")
-data_dir=/g/data/ua8/Precipitation/CMAP
+data_dir=/g/data/ia39/cmap/replica/data
 # download the file the calculate checksum for both new and old file
 # if they differ update collection and log file
 # old file is then temporarily moved to the previous_version folder
-wget https://downloads.psl.noaa.gov/Datasets/cmap/${subset}/${fname}
+wget -N https://downloads.psl.noaa.gov/Datasets/cmap/${subset}/${fname}
 new_md5=$(md5sum ${fname})
 old_md5=$(md5sum ${data_dir}/${subset}/${fname})
 if [ "new_md5" = "old_md5" ]; then
