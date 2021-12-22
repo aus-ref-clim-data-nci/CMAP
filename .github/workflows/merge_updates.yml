@@ -1,0 +1,17 @@
+name: Merge updates branch to main
+on:
+  push:
+    branches:
+      - 'updates'
+jobs:
+  merge-branch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+
+      - name: Merge staging -> main
+        uses: devmasx/merge-branch@master
+        with:
+          type: now
+          target_branch: main
+          github_token: ${{ github.token }}
