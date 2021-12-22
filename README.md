@@ -5,7 +5,7 @@
 The CPC Merged Analysis of Precipitation (CMAP) includes monthly and pentad global gridded precipitation means.
 It has a standard version and one enhanced with NCEP Reanalysis.
 CMAP covers from 1979 to near the present on a global grid at 2.5 degree latitude x 2.5 degree longitude resolution.
-For more information you can check the original data soruce on the
+For more information you can check the original data source on the
 [NOAA Physical Sceince Laboratory (PSL) website](https://psl.noaa.gov/data/gridded/data.cmap.html)
 and the [UCAR climate data guide](https://climatedataguide.ucar.edu/climate-data/cmap-cpc-merged-analysis-precipitation)
 for a review of the dataset.
@@ -16,6 +16,9 @@ The [original data](https://www.cpc.ncep.noaa.gov/products/global_precip/html/wp
 is created by NOAA Climate Prediction Center (CPC) and it is in ascii format;
 we download a netcdf version from [PSL](https://psl.noaa.gov/data/gridded/data.cmap.html).
 For this reason the PSL data is updated irregularly, following updates at CPC.
+Script cmap_download.sh uses wget, to run:
+   ./cmap_download.sh <file> <subset>
+where  <subset> is `enh` for enhanced and `std` for standard
 
 ## Data location
 
@@ -36,8 +39,8 @@ There are two sub-folders:
 - `precip.mon.mean.nc`: standard monthly mean from 1979/01 to 2021/03
 - `precip.pentad.mean.nc`: standard pentad mean from 1979/01 to 2016/12/27
 
-Our last update was on the 26/04/2021.
-The previously downloaded version is kept for reference in the previous_version sub-folders.
+The update_log.txt file keeps track of remote and local updates to files.
+The previously downloaded version is kept for reference in the `previous_version` sub-folders.
 
 ## License
 
