@@ -1,0 +1,6 @@
+std/precip.mon.ltm.nc: modified on 2021-12-21, updated on 2021-12-21
+enh/precip.mon.ltm.nc: modified on 2021-12-21, updated on 2021-12-21
+std/precip.mon.mean.nc: modified on 2021-12-21, updated on 2021-12-21
+enh/precip.mon.mean.nc: modified on 2021-12-21, updated on 2021-12-21
+std/precip.pentad.mean.nc: modified on 2020-04-14, updated on 2021-12-21
+enh/precip.pentad.mean.nc: modified on 2020-04-14, updated on 2021-12-21

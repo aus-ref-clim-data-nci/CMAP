@@ -36,6 +36,7 @@ fname=$1
 subset=$2
 today=$(date "+%Y-%m-%d")
 data_dir=/g/data/ia39/cmap/replica/data
+code_dir=/g/data/ia39/cmap/replica/code
 # download the file the calculate checksum for both new and old file
 # if they differ update collection and log file
 # old file is then temporarily moved to the previous_version folder
@@ -51,5 +52,5 @@ else
     mv $fname ${data_dir}/${subset}/. 
     mod_date=$(date -r  ${data_dir}/${subset}/${fname} "+%Y-%m-%d")
     echo "${subset}/${fname}: modified on ${mod_date}, updated on ${today}" >> \
-	   ${data_dir}/updates.txt 
+	   ${code_dir}/update_log.txt 
 fi
