@@ -27,7 +27,7 @@ where  <subset> is `enh` for enhanced and `std` for standard.
 
 We've downloaded the CMAP dataset to:
 ```
-/g/data/ia39/CMAP/replica/data  
+/g/data/ia39/aus-ref-clim-data-nci/cmap/replica/data 
 ```
 
 There are two sub-folders:
