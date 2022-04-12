@@ -22,22 +22,26 @@
 # long term monthly (ltm) goes from 1981 to 2010
 # pentad: currently to 2016 so next 5-yrs will be possibly available soon
 #
-# The dataset is stored in /g/data/ia39/aus-ref-clim-data-nci/cmap/replica/data/<subset>/<files>
+# The dataset is stored in /g/data/ia39/aus-ref-clim-data-nci/cmap/data/<subset>/<files>
 # where <subset> can be enh (enhanced) or std (standard)
 #
 # To run the script ./cmap_download.sh <filename> <subset>
-# record of updated files is kept in /g/data/ia39/aus-ref-clim-data-nci/cmap/replica/data/updates.txt
+# record of updated files is kept in /g/data/ia39/aus-ref-clim-data-nci/cmap/data/updates.txt
 #
 # Last change:
 # 2021-12-22
 # 2022-04-07 - Moved directory to /g/data/ia39/aus-ref-clim-data-nci/cmap/
+# 2022-04-12 - remove replica folder and introduce $AUSREFDIR
+#
+
 
 fname=$1
 # subset can be std or enh
 subset=$2
 today=$(date "+%Y-%m-%d")
-data_dir=/g/data/ia39/aus-ref-clim-data-nci/cmap/replica/data
-code_dir=/g/data/ia39/aus-ref-clim-data-nci/cmap/replica/code
+root_dir=${AUSREFDIR:-/g/data/ia39/aus-ref-clim-data-nci}
+data_dir=${root_dir}/cmap/data
+code_dir=${root_dir}/cmap/code
 # download the file the calculate checksum for both new and old file
 # if they differ update collection and log file
 # old file is then temporarily moved to the previous_version folder
