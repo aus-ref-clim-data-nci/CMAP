@@ -83,4 +83,4 @@ Thank you!
   
 ## Assistance
 
-For assistance with CMAP data on NCI, open a new issue at https://github.com/nci-ref-clim-data/CMAP/issues
+For assistance with CMAP data on NCI, open a new issue at https://github.com/aus-ref-clim-data-nci/CMAP/issues
