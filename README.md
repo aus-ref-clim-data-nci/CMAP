@@ -19,7 +19,7 @@ For this reason the PSL data is updated irregularly, following updates at CPC.
 
 The download script uses wget. It can be run as follows,
 ```
-$ ./cmap_download.sh <file> <subset>
+$ ./cmap.sh <file> <subset>
 ```
 where  <subset> is `enh` for enhanced and `std` for standard.
 
@@ -27,7 +27,7 @@ where  <subset> is `enh` for enhanced and `std` for standard.
 
 We've downloaded the CMAP dataset to:
 ```
-/g/data/ia39/aus-ref-clim-data-nci/cmap/replica/data 
+/g/data/ia39/aus-ref-clim-data-nci/cmap/data 
 ```
 
 There are two sub-folders:
